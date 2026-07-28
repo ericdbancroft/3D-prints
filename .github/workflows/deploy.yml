@@ -1,0 +1,38 @@
+name: Deploy Static Site to Pages
+
+on:
+  push:
+    branches: ["main"] # Change to "master" if your default branch uses that name
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      # NOTE: If you generate your '_site' folder during the CI run (e.g., using Jekyll, Eleventy, etc.),
+      # insert your build steps here (e.g., 'npm run build'). 
+      # If you commit your '_site' folder directly to Git, you don't need build steps.
+
+      - name: Upload Pages Artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: './_site' # Instructs GitHub to only deploy the contents of this folder
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
