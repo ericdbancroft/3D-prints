@@ -1,0 +1,182 @@
+\documentclass{amsart}
+\usepackage{array}
+\usepackage{multicol}
+\usepackage{longtable}
+\usepackage{subfig,enumerate}
+\usepackage{ragged2e, color}
+\usepackage{amsmath,amssymb,amsthm,graphicx, graphics}
+\usepackage[all]{xy}
+\usepackage[pdfpagelabels]{hyperref}                 % For creating hyperlinks in cross references
+
+\usepackage{pgf,tikz}
+\usepackage{mathrsfs,multicol}
+\usetikzlibrary{arrows}
+
+%CALCULUS
+\newcommand{\dydx}{\frac{dy}{dx}}
+\newcommand{\ddx}{\frac{d}{dx}}
+\newcommand{\ddt}{\frac{d}{dt}}
+\newcommand{\dd}[2]{\frac{d#1}{d#2}}
+\newcommand{\uv}{\vec{u}}
+\newcommand{\vv}{\vec{v}}
+\newcommand{\wv}{\vec{w}}
+\newcommand{\av}{\vec{a}}
+\newcommand{\bv}{\vec{b}}
+\newcommand{\rvt}{\vec{r}(t)}
+\newcommand{\rvtp}{\vec{r}\,'(t)}
+\newcommand{\vvp}{\vec{v}\,'(t)}
+\newcommand{\uvp}{\vec{u}\,'(t)}
+\newcommand{\fv}[1]{\langle #1 \rangle} 
+\newcommand{\ihat}{\mathbf{\hat{\textbf{\i}}}}
+\newcommand{\jhat}{\mathbf{\hat{\textbf{\j}}}}
+\newcommand{\khat}{\mathbf{\hat{\textbf{k}}}}
+\newcommand{\la}{\left\langle\,}
+\newcommand{\ra}{\,\right\rangle}
+\newcommand{\dotp}{\hspace{.25em}\begin{picture}(-1,1)(-1,-3)\circle*{2}\end{picture}\hspace{.5em} }
+\newcommand{\proj}[2]{\textrm{proj}_{\,#2}\:#1 }
+\newcommand{\compp}[2]{\textrm{comp}_{\,#2}\:#1 }
+\newcommand{\pder}[2]{\frac{\partial #1}{\partial #2}}
+\newcommand{\ppder}[3]{\frac{\partial^2 #1}{\partial #3\,\partial #2}}
+\newcommand{\V}[1]{\vec{#1}}
+\newcommand{\ds}{\displaystyle}
+\newcommand{\curl}{\mathrm{curl}\,}
+\renewcommand{\div}{\mathrm{div}\,}
+
+%STANDARD SETS
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\Q}{\mathbb{Q}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\C}{\mathbb{C}}
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\F}{\mathbb{F}} %finite field
+
+%GENERAL
+\newcommand{\inv}{^{-1}}
+\newcommand{\del}{\partial}
+\newcommand{\by}{\times}
+
+\newcommand{\comp}{\circ}
+
+\newcommand{\infunion}{\bigcup_{i=1}^\infty}
+\newcommand{\infcap}{\bigcap_{i=1}^\infty}
+\newcommand{\floor}[1]{\lfloor #1 \rfloor}
+
+\newcommand{\blankline}{\vspace{.1in}}
+\newcommand{\fillin}[1]{\underline{\hspace{#1 in}}}
+
+
+\parindent 1cm
+\parskip 0.2cm
+\topmargin -1.5cm
+
+\oddsidemargin -1cm
+\evensidemargin -1cm
+\textwidth 18.5cm
+\textheight 23.5cm
+\newtheorem{theorem}{Theorem}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{remark}[theorem]{Remark}
+
+
+
+\theoremstyle{definition}
+\newtheorem{formula}[theorem]{Formula}
+\newtheorem{example}{Example}
+\newtheorem{definition}{Definition}
+
+\makeindex
+
+
+
+\title{Handout to accompany 3D-printed models}
+
+\author{Dr.~Eric Bancroft, Grove City College  }
+
+\date{ Summer 2026 }
+
+
+
+%\newlength\boxedblankwidth
+%\setlength{\boxedblankwidth}{\textwidth}
+%\advance\boxedblankwidth by -\leftmargin
+%\newcommand\boxedblank[2][1in]{\fbox{\raisebox{0pt}[\height][#1]{\parbox[t]{\boxedblankwidth}{#2}}}}
+%
+%\newlength\textwidthinlist
+%\newcommand\computetextwidthinlist{\textwidthinlist=\textwidth
+%                                   \advance\textwidthinlist by -\leftmargin
+%                                   \advance\textwidthinlist by -\rightmargin}
+
+
+
+%%%%%%%%%%%%
+% -- DOCUMENT -- %
+%%%%%%%%%%%%
+
+\begin{document}
+%\maketitle
+
+\section*{Region 5}
+
+Set up all six orders of integration for \[\iiint\limits_{R_5} f(x,y,z) \, dV,\] where $R_5$ is the region bounded by 
+\[y+z=2,\ x=4-y^2,\ x=0,\ y=0,\ \text{and } z=0.\]
+
+\vspace{2em}
+
+\begin{figure}[!ht]
+\vspace{-1em}
+	\centering
+	\begin{tabular}{ll}
+		\includegraphics[width=.45\textwidth]{Solid5Full} &
+		\includegraphics[width=.45\textwidth]{Solid5Print}
+	\end{tabular}
+	\caption{Computer-modeled and 3D-printed views of $R_5$}
+\end{figure}
+
+\vspace{2em}
+
+\begin{figure}[!ht]
+\vspace{-1em}
+	\centering
+	\begin{tabular}{ccc}
+		\subfloat[$xy$-projection.]{\includegraphics[width=.3\textwidth]{Solid5XYProj}} &
+		\subfloat[$xz$-projection.]{\includegraphics[width=.3\textwidth]{Solid5XZProj.pdf}} &
+		\subfloat[$yz$-projection.]{\includegraphics[width=.3\textwidth]{Solid5YZProj.pdf}}
+	\end{tabular}
+	\caption{Projections of $R_5$ into the three coordinate planes.}%\label{projE2}
+\end{figure}
+
+\clearpage
+~
+\vspace{1em}
+
+The following triple integrals represent the solid using the $xy$-projection:
+
+\[\int_{0}^{2}\int_{0}^{4-y^2}\int_{0}^{2-y} f(x,y,z) \,dz \,dx \,dy\]
+\[\int_{0}^{4}\int_{0}^{\sqrt{4-x}}\int_{0}^{2-y} f(x,y,z) \,dz \,dy \,dx\]
+
+The following triple integrals represent the solid using the $xz$-projection:
+
+\[\int_{0}^{2}\int_{0}^{-z^2+4z}\int_{0}^{2-z} f(x,y,z) \,dy \,dx \,dz + \int_{0}^{2}\int_{-z^2+4z}^{4}\int_{0}^{\sqrt{4-x}} f(x,y,z) \,dy \,dx \,dz\]
+\[\int_{0}^{4}\int_{0}^{2-\sqrt{4-x}}\int_{0}^{\sqrt{4-x}} f(x,y,z) \,dy \,dz \,dx + \int_{0}^{4}\int_{2-\sqrt{4-x}}^{2}\int_{0}^{2-z} f(x,y,z) \,dy \,dz \,dx\]
+
+The following triple integrals represent the solid using the $yz$-projection:
+
+\[\int_{0}^{2}\int_{0}^{2-z}\int_{0}^{4-y^2} f(x,y,z) \,dx \,dy \,dz\]
+\[\int_{0}^{2}\int_{0}^{2-y}\int_{0}^{4-y^2} f(x,y,z) \,dx \,dz \,dy\]
+
+\vspace{1em}
+All of these triple integrals evaluate to $\frac{20}{3}$  when $f(x,y,z) = 1$.
+
+%\item $\ds\int\qquad \int\qquad\int\quad f(x,y,z) \,dx\, dy\, dz$
+%\item $\ds\int\qquad \int\qquad\int\quad f(x,y,z) \,dx\, dz\, dy$
+%\item $\ds\int\qquad \int\qquad\int\quad f(x,y,z) \,dy\, dx\, dz$
+%\item $\ds\int\qquad \int\qquad\int\quad f(x,y,z) \,dy\, dz\, dx$
+%\item $\ds\int\qquad \int\qquad\int\quad f(x,y,z) \,dz\, dx\, dy$
+%\item $\ds\int\qquad \int\qquad\int\quad f(x,y,z) \,dz\, dy\, dx$
+
+
+
+
+\end{document}

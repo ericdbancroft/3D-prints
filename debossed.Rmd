@@ -1,0 +1,34 @@
+---
+title: "Debossed STL Files"
+output: 
+  html_document:
+      df_print: paged
+---
+
+## GitHub Link
+
+* [https://github.com/ericdbancroft/3D-prints/debossed/](https://github.com/ericdbancroft/3D-prints/debossed/)
+
+## STL Files
+
+Note: Only the full views are linked here. See the folder above for additional files corresponding to split views.
+
+### [Solid 1 STL file](debossed/Solid1FullDebossed.stl)
+![Solid 1](pageimages/solid1debossed.png)  
+<br>
+  
+### [Solid 2 STL file](debossed/Solid2FullDebossed.stl)
+![Solid 2](pageimages/solid2debossed.png)  
+<br>
+  
+### [Solid 3 STL file](debossed/Solid3FullDebossed.stl)
+![Solid 3](pageimages/solid3debossed.png)  
+<br>
+  
+### [Solid 4 STL file](debossed/Solid4FullDebossed.stl)
+![Solid 4](pageimages/solid4debossed.png)  
+<br>
+  
+### [Solid 5 STL file](debossed/Solid5FullDebossed.stl)
+![Solid 5 ](pageimages/solid5debossed.png)  
+<br>

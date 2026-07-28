@@ -1,0 +1,14 @@
+navbar:
+  title: 3D Print Resources
+  left:
+  - text: Handouts
+    href: handouts.html
+  - text: Debossed STL Files
+    href: debossed.html  
+  - text: Plain Unmarked STL Files
+    href: unmarked.html  
+  - text: Mold STL Files
+    href: molds.html
+output:
+  html_document:
+    theme: paper

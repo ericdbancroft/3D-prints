@@ -1,0 +1,25 @@
+---
+title: "Handouts"
+output: 
+  html_document:
+      df_print: paged
+---
+
+## GitHub Link
+
+* [https://github.com/ericdbancroft/3D-prints/handouts/](https://github.com/ericdbancroft/3D-prints/handouts/)
+
+## Handouts
+
+If you would like to compile the TEX files you will need to comment out the images or download them from the GitHub repository above.
+
+* [Solid 1 Handout pdf](handouts/Solid1/Solid1Handout.pdf)
+* [Solid 1 Handout tex](handouts/Solid1/Solid1Handout.tex)
+* [Solid 2 Handout pdf](handouts/Solid2/Solid2Handout.pdf)
+* [Solid 2 Handout tex](handouts/Solid2/Solid2Handout.tex)
+* [Solid 3 Handout pdf](handouts/Solid3/Solid3Handout.pdf)
+* [Solid 3 Handout tex](handouts/Solid3/Solid3Handout.tex)
+* [Solid 4 Handout pdf](handouts/Solid4/Solid4Handout.pdf)
+* [Solid 4 Handout tex](handouts/Solid4/Solid4Handout.tex)
+* [Solid 5 Handout pdf](handouts/Solid5/Solid5Handout.pdf)
+* [Solid 5 Handout tex](handouts/Solid5/Solid5Handout.tex)

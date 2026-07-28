@@ -1,0 +1,18 @@
+---
+title: "3D Print Resources"
+author: "Page authored by Eric Bancroft"
+date: "Last upated `r Sys.Date()`"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+library(fontawesome)
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+Use the links above to handouts and STL files related to this project. The GitHub link for this project is <https://github.com/ericdbancroft/3D-prints/>.
+
+## Contact Us!
+* Dr. Eric Bancroft: <BancrofED@gcc.edu> or `r fa("linkedin", fill = "#0e76a8")` [connect on LinkedIn](https://www.linkedin.com/in/ericdbancroft/)
+* Logan Baker: <BakerLT25@gcc.edu> or `r fa("linkedin", fill = "#0e76a8")` [connect on LinkedIn](https://www.linkedin.com/in/logan-baker-b70363410/)
+* Sofia Rivera: <RiveraSJ25@gcc.edu> or `r fa("linkedin", fill = "#0e76a8")` [connect on LinkedIn](https://www.linkedin.com/in/sofia-rivera-27459a410/)

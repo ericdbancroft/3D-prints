@@ -1,0 +1,34 @@
+---
+title: "Plain STL Files"
+output: 
+  html_document:
+      df_print: paged
+---
+
+## GitHub Link
+
+* [https://github.com/ericdbancroft/3D-prints/masters/](https://github.com/ericdbancroft/3D-prints/masters/)
+
+## STL Files
+
+Note: Only the full views (\(z\)-axis view) are linked here. See the folder above for additional files corresponding to split views.
+
+### [Solid 1 STL file](masters/solid1.Zview_master.stl)
+![Solid 1](pageimages/solid1unmarked.png)  
+<br>
+  
+### [Solid 2 STL file](masters/solid2.Zview_master.stl)
+![Solid 2](pageimages/solid2unmarked.png)  
+<br>
+  
+### [Solid 3 STL file](masters/solid3.Zview_master.stl)
+![Solid 3](pageimages/solid3unmarked.png)  
+<br>
+  
+### [Solid 4 STL file](masters/solid4_master.stl)
+![Solid 4](pageimages/solid4unmarked.png)  
+<br>
+  
+### [Solid 5 STL file](masters/solid5.Zview_master.stl)
+![Solid 5 ](pageimages/solid5unmarked.png)  
+<br>
